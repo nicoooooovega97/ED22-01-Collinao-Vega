@@ -6,8 +6,8 @@
 
 ### Integrantes
 
-* Alumno 01 (Rol)
-* Alumno 02 (Rol)
+* Claudia Collinao (Rol)
+* Nicolas Vega (Rol)
 
 ### Bitácora
 
