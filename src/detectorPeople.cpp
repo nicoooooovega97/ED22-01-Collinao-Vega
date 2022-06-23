@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 
     Detector detector;
     Mat imagen;
-    imagen = imread("/home/jbekios/CODE/opencvTests/images/image0292.png");
+    imagen = imread("C:/Users/nico_/OneDrive/Escritorio/proyecto/ED22-01-Collinao-Vega/src/imagenes/image0292.png");
     detector.toggleMode();
     cout << detector.modeName() << endl;
 
