@@ -3,20 +3,22 @@
 
 # Informe Técnico 
 ## Curso: Estructura de datos
-### Detección y reidentificación de caras en secuencias de imágenes o video
+### Detección e identificación de personas en secuencias de imágenes o video
 
 **Alumnos:**
 
-* Alumno 01 (Rol)
-* Alumno 02 (Rol)
+* Claudia Collinao Rojas (Coordinadora)
+* Nicolás Vega Vega (Programador)
 
 ## Resumen 
 
 > Agregar un resumen que describa el trabajo realizado y sus resultados. (Entre 150 y 180 palabras)
 > Más cosas...
 > El resumen indicarlo como cita con el comando `>`
+> Este trabajo tiene como finalidad desarrollar e implementar un sistema de conteo e identificación de personas; para lograr nuestro objetivo tuvimos que desarrollar un programa en lenguaje C++, usando la librería OpenCV. En primera instancia, utilizamos listas enlazadas para detectar y marcar la zona ocupada por la persona que entra o sale del recinto, creando una clase llamada "Detector" la cual implementa la detección de la persona y dibuja un rectángulo alrededor de ella para su posterior identificación; luego definimos la acción de entrar y salir al lugar e implementamos un contador para poder contar las personas que entran y salen en un determinado tiempo del lugar y la cantidad de veces que lo hacen.  
 
 ## 1. Introducción
+Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de persona que visita espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.
 
 La primera función de un reporte técnico es plasmar la información necesaria para que otras personas puedan reproducir el sistema propuesto o puedan entender su fucnionamiento . Para cumplir anterior se debe diferenciar claramente entre los artefactos de diseño e implementación. En el caso de un desarrollo tecnológico los algoritmos son importantes como componente de diseño y los programas generalmente son irrelevantes y deben resumidos o agregados en anexos en el documento. Los programas no son importantes en el documento, salvo si se quiere explicar conceptos expecíficos del lenguaje o del algoritmo implementado.
 
@@ -32,22 +34,16 @@ Dado el laboratorio describir como se entiende el problema bajo sus propias pala
 
 **Objetivo General**
 
-El fin que se desea llegar. (Comenzar con un verbo: "Construir un sistema...", "Desarrollar un sistema...", etc)
+Desarrollar un sistema de conteo e identificación de personas mediante algoritmos analíticos de imagenes de video.
 
 **Objetivos específicos**
 
-1. Objetivo 1
-2. Objetivo 2
-3. Objetivos 3
+1. Implementar la detección de personas que pasan por la imagen de video.
+2. Establecer zona de salida y zona de entrada al control.
+3. Contar e identificar las personas que entran y salen del control.
+4. Calcular la velocidad de entrada y salida de personas.
 
-Los objetivos específicos son acciones específicas que son desarrolladas para lograr cumplir el objetivo general, por ejemplo:
 
-1. Investigar  el  estado  del  arte  de  visión  por  computador  y  audio  para  resolver  tareas de  clasificación unimodal y multimodal aplicado  al  problema  de  reconocimiento  de emociones.
-2.  Seleccionar  uno  o  dos  métodos  estudiados  en  el  estado  del  arte  para  la  estimación  de  laemoción utilizando datos unimodales o multimodales.
-3.  Implementar los métodos seleccionados utilizando el lenguaje de programación Python y laslibrerías suministradas por Pytorch.
-4.  Validar  los  resultados  por  medio  bases  de  datos  especializadas  para  el  desarrollo  deaplicaciones basadas en la estimación de la emoción y que incluyan varios modos de atributoscomo: imágenes, sonido y/o texto.
-5.  Proponer  mejoras  a  los  modelos  implementados  para  mejorar  su  desempeño  en  futurasimplementaciones o proyectos de investigación.
-6.  Difundir los resultados en medios científicos nacionales o internacionales.
 
 ### 1.3 Solución propuesta
 
@@ -55,9 +51,13 @@ Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida
 
 ## 2. Materiales y métodos
 
+IDE Visual Studio Code
+Librerías para procesamiento de imágenes en C++, OpenCV
+
 Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
+
 
 Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
 
