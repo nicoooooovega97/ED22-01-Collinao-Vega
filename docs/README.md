@@ -12,9 +12,6 @@
 
 ## Resumen 
 
-> Agregar un resumen que describa el trabajo realizado y sus resultados. (Entre 150 y 180 palabras)
-> Más cosas...
-> El resumen indicarlo como cita con el comando `>`
 > Este trabajo tiene como finalidad desarrollar e implementar un sistema de conteo e identificación de personas; para lograr nuestro objetivo tuvimos que desarrollar un programa en lenguaje C++, usando la librería OpenCV. En primera instancia, utilizamos listas enlazadas para detectar y marcar la zona ocupada por la persona que entra o sale del recinto, creando una clase llamada "Detector" la cual implementa la detección de la persona y dibuja un rectángulo alrededor de ella para su posterior identificación; luego definimos la acción de entrar y salir al lugar e implementamos un contador para poder contar las personas que entran y salen en un determinado tiempo del lugar y la cantidad de veces que lo hacen.  
 
 ## 1. Introducción
