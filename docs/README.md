@@ -15,7 +15,7 @@
 > Este trabajo tiene como finalidad desarrollar e implementar un sistema de conteo e identificación de personas; para lograr nuestro objetivo tuvimos que desarrollar un programa en lenguaje C++, usando la librería OpenCV. En primera instancia, utilizamos listas enlazadas para detectar y marcar la zona ocupada por la persona que entra o sale del recinto, creando una clase llamada "Detector" la cual implementa la detección de la persona y dibuja un rectángulo alrededor de ella para su posterior identificación; luego definimos la acción de entrar y salir al lugar e implementamos un contador para poder contar las personas que entran y salen en un determinado tiempo del lugar y la cantidad de veces que lo hacen.  
 
 ## 1. Introducción
-Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de persona que visita espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.
+Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de personas que visitan los espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.
 
 La primera función de un reporte técnico es plasmar la información necesaria para que otras personas puedan reproducir el sistema propuesto o puedan entender su fucnionamiento . Para cumplir anterior se debe diferenciar claramente entre los artefactos de diseño e implementación. En el caso de un desarrollo tecnológico los algoritmos son importantes como componente de diseño y los programas generalmente son irrelevantes y deben resumidos o agregados en anexos en el documento. Los programas no son importantes en el documento, salvo si se quiere explicar conceptos expecíficos del lenguaje o del algoritmo implementado.
 
@@ -25,7 +25,8 @@ Las comparaciones deben concretarse con hechos y datos, sin frases ambiguas o t�
 
 ### 1.1 Descripción del problema
 
-Dado el laboratorio describir como se entiende el problema bajo sus propias palabras.
+Se nos pide como estudiantes del curso de Estructura de datos, construir un sistema de vigilancia que cuente las personas que transitan en una zona determinada de un edificio. Este sistema de vigilancia contará con un dispositivo tecnológico que puede ser una cámara de video o simplemente el video capturado. Siendo el objetivo de este proyecto lograr captar e identificar las personas que entran y salen del lugar en estudio, para así contabilizar la cantidad de personas que entran y salen, saber cuántas diferentes personas pasan por la zona de conteo, calcular la velocidad con la cual ingresa cierta cantidad de personas en un tiempo determinado (Personas/tiempo), y como último requerimiento listar a las personas que más han entrado o salido del lugar.
+
 
 ### 1.2 Objetivos 
 
@@ -48,12 +49,32 @@ Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida
 
 ## 2. Materiales y métodos
 
+Primero se utilizará IDE Visual Studio Code Librerías para procesamiento de imágenes en C++, OpenCV y CMake luego de eso instalado correctamente se pasara a la clonación del repositorio en github para finalmente empezar a codificar la solución del problemas 
+Hay que mencionar que antes de la clonación del repositorio hay que descargar git y github desktop
+
 IDE Visual Studio Code
 Librerías para procesamiento de imágenes en C++, OpenCV
 
 Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
+
+**Librerías:**
+
+**-OpenCV:** (Open Source Computer Vision) es una librería multiplataforma originalmente desarrollada como proyecto por Intel para apoyar a los primeros compiladores Intel C++ y Microsoft Visual C++ en x86. Es muy utilizada actualmente para el procesamiento de imágenes y la visión artificial en general, también se ha utilizado en infinidad de aplicaciones como control de procesos, sistemas de seguridad con detección de movimiento, reconocimiento de objetos, robótica avanzada, etc.
+
+**Programas:**
+Este programa es un editor de texto plano desarrollado por Microsoft como software OpenSource y es totalmente gratuito para todo tipo de usuarios para que cualquiera pueda programar en prácticamente cualquier lenguaje.
+
+**Extenciones:**
+
+//////////////////////////![C/C++](images/c++.png) 
+![C/C++run](images/c++run.png)
+
+![Cmake](images/cmake.png)
+
+CMake es una familia de herramientas multiplataforma de código abierto diseñada para crear, probar y empaquetar software. CMake se usa para controlar el proceso de compilación de software mediante una plataforma simple y archivos de configuración independientes del compilador, y genera archivos MAKE nativos y espacios de trabajo que se pueden usar en el entorno de compilación de su elección
+
 
 
 Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
