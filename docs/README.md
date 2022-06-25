@@ -67,7 +67,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 **Extenciones:**
 
-[C/C++](images/c++.png) extensión para utilizar lenguaje blabloa
+![C/C++](images/c++.png) **extensión para utilizar lenguaje blabloa
 
 ![C/C++run](images/c++run.png)
 
