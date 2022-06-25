@@ -49,6 +49,9 @@ Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida
 
 ## 2. Materiales y métodos
 
+Primero se utilizará IDE Visual Studio Code Librerías para procesamiento de imágenes en C++, OpenCV y CMake luego de eso instalado correctamente se pasara a la clonación del repositorio en github para finalmente empezar a codificar la solución del problemas 
+Hay que mencionar que antes de la clonación del repositorio hay que descargar git y github desktop
+
 IDE Visual Studio Code
 Librerías para procesamiento de imágenes en C++, OpenCV
 
@@ -56,14 +59,15 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
 
-**Librerías:**\n
+**Librerías:**
 
-**OpenCV:** (Open Source Computer Vision) es una librería multiplataforma originalmente desarrollada como proyecto por Intel para apoyar a los primeros compiladores Intel C++ y Microsoft Visual C++ en x86. Es muy utilizada actualmente para el procesamiento de imágenes y la visión artificial en general, también se ha utilizado en infinidad de aplicaciones como control de procesos, sistemas de seguridad con detección de movimiento, reconocimiento de objetos, robótica avanzada, etc.
+**-OpenCV:** (Open Source Computer Vision) es una librería multiplataforma originalmente desarrollada como proyecto por Intel para apoyar a los primeros compiladores Intel C++ y Microsoft Visual C++ en x86. Es muy utilizada actualmente para el procesamiento de imágenes y la visión artificial en general, también se ha utilizado en infinidad de aplicaciones como control de procesos, sistemas de seguridad con detección de movimiento, reconocimiento de objetos, robótica avanzada, etc.
 
-**Programas:**\n
+**Programas:**
+
 **Extenciones:**
 
-![C/C++](images/c++.png)
+![C/C++](images/c++.png) extensión para utilizar lenguaje blabloa
 
 ![C/C++run](images/c++run.png)
 
