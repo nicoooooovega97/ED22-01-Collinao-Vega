@@ -62,6 +62,13 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 **Programas:**
 **Extenciones:**
 
+![C/C++](images/c c++.png)
+
+![C/C++run](images/c++run.png)
+
+![Cmake](images/cmake.png)
+
+
 
 Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
 
