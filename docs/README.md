@@ -16,7 +16,7 @@
 
 ## 1. Introducción
 Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de personas que visitan los espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.Además, este tipo de aplicaciones han tomado mucha importancia en los útimos años, dadas las necesidades de prevenir situaciones como robos, detección de situaciones peligrosas, identificación de personas buscadas por la ley.
-Para tratar de resolver este problema se han planteado propuestas mediante la utilización de distintos sensores de visión con elementos como laser, luz infraroja, etc. Los cuales son eficaces al momento de contar la cantidad de personas que pasan por este sensor, pero no así la identificación de personas, ya sea para saber sus movimientos dentro del recinto(entrar y/o salir) o saber la cantidad de veces que ha entrado o ha salido,  
+Para tratar de resolver este problema se han planteado propuestas mediante la utilización de distintos sensores de visión con elementos como laser, luz infraroja, etc. Los cuales son eficaces al momento de contar la cantidad de personas que pasan por este sensor, pero no así la identificación de personas, ya sea para saber sus movimientos dentro del recinto(entrar y/o salir) o saber la cantidad de veces que ha entrado o ha salido; funciones más avanzadas que se aprenderá y se desarrollará con la librería openCV quien ayudará en la identificación y procesamiento de estas imágenes generadas mediante cámaras de video ;para luego analizar y medir datos con los cuales se puedan supervisar procesos y tomar decisiones. 
 
 
 ### 1.1 Descripción del problema
@@ -85,13 +85,10 @@ Hay que mencionar que antes de la clonación del repositorio hay que descargar g
 ### 2.2 Diseño 
 ![diagrama](images/diagra.png) 
 
-Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
 
 ### 2.3 Implementación
 
-Explicar brevemente algunos aspectos de implementación: Por ejemplo, detector de caras utilizado. Se pueden realizar pequeñas reseñas al código para indicar elementos importantes en el trabajo.
 
-Por ejemplo, 
 
 #### Detector de Personas
 ![implementa](images/implementacion.png) 
@@ -118,8 +115,11 @@ Logramos  detectar las personas con el centroide y con sus colores diferentes pe
 # Referecia
 
 1.CMake. (s. f.). https://cmake.org/
+
 2.Librerías o Bibliotecas. (2020, 29 noviembre). programarya. Recuperado 24 de junio de 2022, de https://www.programarya.com/Cursos/C++/Bibliotecas-o-Librerias
+
 3.Build software better, together. (s. f.). GitHub. Recuperado 24 de junio de 2022, de https://github.com/topics/people-counter?l=python
+
 4.Hajeri, V. (2016, 27 julio). People counting System using OpenCV 3.1 [Vídeo]. YouTube. https://www.youtube.com/watch?v=SewTS0bj1gU&feature=youtu.be
 
 
