@@ -15,13 +15,9 @@
 > Este trabajo tiene como finalidad desarrollar e implementar un sistema de conteo e identificación de personas; para lograr nuestro objetivo tuvimos que desarrollar un programa en lenguaje C++, usando la librería OpenCV. En primera instancia, utilizamos listas enlazadas para detectar y marcar la zona ocupada por la persona que entra o sale del recinto, creando una clase llamada "Detector" la cual implementa la detección de la persona y dibuja un rectángulo alrededor de ella para su posterior identificación; luego definimos la acción de entrar y salir al lugar e implementamos un contador para poder contar las personas que entran y salen en un determinado tiempo del lugar y la cantidad de veces que lo hacen.  
 
 ## 1. Introducción
-Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de personas que visitan los espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.
+Actualmente es muy común la búsqueda de tecnología en sistemas para controlar la cantidad de personas que visitan los espacios cerrados, ya sea con un sistema de vigilancia, análisis de flujos de movimientos de personas, control de acceso o de aforo, etc.Además, este tipo de aplicaciones han tomado mucha importancia en los útimos años, dadas las necesidades de prevenir situaciones como robos, detección de situaciones peligrosas, identificación de personas buscadas por la ley.
+Para tratar de resolver este problema se han planteado propuestas mediante la utilización de distintos sensores de visión con elementos como laser, luz infraroja, etc. Los cuales son eficaces al momento de contar la cantidad de personas que pasan por este sensor, pero no así la identificación de personas, ya sea para saber sus movimientos dentro del recinto(entrar y/o salir) o saber la cantidad de veces que ha entrado o ha salido,  
 
-La primera función de un reporte técnico es plasmar la información necesaria para que otras personas puedan reproducir el sistema propuesto o puedan entender su fucnionamiento . Para cumplir anterior se debe diferenciar claramente entre los artefactos de diseño e implementación. En el caso de un desarrollo tecnológico los algoritmos son importantes como componente de diseño y los programas generalmente son irrelevantes y deben resumidos o agregados en anexos en el documento. Los programas no son importantes en el documento, salvo si se quiere explicar conceptos expecíficos del lenguaje o del algoritmo implementado.
-
-La redacción debe ser formal y de modo impersonal. No se debe utlizar primera persona del singular o plural. Se debe evitar el uso de cualquier calificativo sustituyéndolo siempre utilizando datos concretos y rastreables en documentos o publicaciones a través de referencias bibliográficas. Por ejemplo, no calificar algo como: "muy importante", "sustancial", "muy usadoo" o "mucho mejor".
-
-Las comparaciones deben concretarse con hechos y datos, sin frases ambiguas o términos generales. Por ejemplo, nunca se debe redactar frases como "el método es mejor que el método B". Lo correcto es decir, el error promedio de el método A es de 5 %, correspondiendo a la mitad del error de 10% obtenido utilizando el método B". El tiempo verbal es usualmente presente. No se debe perder de vista que se está explicando ”como hacer algo”, en vez de ”qué se hizo”. Todo aspecto circunstancial es irrelevante para el documento. Por ejemplo, si se ha desarrollado en el laboratorio X, o en el curso Y, con el profesor Z, etc.
 
 ### 1.1 Descripción del problema
 
@@ -45,17 +41,16 @@ Desarrollar un sistema de conteo e identificación de personas mediante algoritm
 
 ### 1.3 Solución propuesta
 
-Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida que se avanza en el proyecto.
+La solución propuesta en la detección de personas, al momento que la persona(s) aparezcan en la imagen o video porque aun no se ve bien como se llevara a cabo la ejecución del problema mediante códigos en lenguaje c++, tendrá que reconocer a cada persona y a su vez ver si esa persona ya pasó por la zona de control, con el calculo del centroide que se llevara a cabo.
+
+Si se toma un punto de la imagen como positivos y vemos que al moverse y calcular la diferencia del centroide de una misma persona que se guardara en un nodo persona es positiva entonces eso quiere decir que esta entrando la persona. En caso contrario si se calcula y da negativo significará de estará saliendo todo esto ya registrado en un nuevo nodo de personas de salidas personas entrada.
+Luego de tener eso registrados en dichos nodos se puede ya calcular con el mismo nodo correspondiente de salida o entrada cuentas personas corresponde para desplegar el calcula de persona que pasan entran/salen en una determinada hora y su diferencia.
 
 ## 2. Materiales y métodos
 
-Primero se utilizará IDE Visual Studio Code Librerías para procesamiento de imágenes en C++, OpenCV y CMake luego de eso instalado correctamente se pasara a la clonación del repositorio en github para finalmente empezar a codificar la solución del problemas 
+Primero se utilizará la IDE Visual Studio Code y Librerías para procesamiento de imágenes en C++, OpenCV y CMake luego de eso instalado correctamente se pasara a la clonación del repositorio en github para finalmente empezar a codificar la solución del problemas 
 Hay que mencionar que antes de la clonación del repositorio hay que descargar git y github desktop
 
-IDE Visual Studio Code
-Librerías para procesamiento de imágenes en C++, OpenCV
-
-Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
 
@@ -87,8 +82,6 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 
 
-Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
-
 ### 2.2 Diseño 
 ![diagrama](images/diagra.png) 
 
@@ -100,29 +93,17 @@ Explicar brevemente algunos aspectos de implementación: Por ejemplo, detector d
 
 Por ejemplo, 
 
-#### Detector de caras
+#### Detector de Personas
+![implementa](images/implementacion.png) 
 
-El detector de caras utilizado fue xxx. Para utilizarlo se debe.... El código para detectar una cara en una imagen se muestra a continuación:
 
-```c++
- 1. faceCascadePath = "./haarcascade_frontalface_default.xml";
- 2. faceCascade.load( faceCascadePath )
- 3. std::vector<Rect> faces;
- 4. faceCascade.detectMultiScale(frameGray, faces);
-
- 5. for ( size_t i = 0; i < faces.size(); i++ )
- 6. {
- 7.  int x1 = faces[i].x;
- 8.  int y1 = faces[i].y;
- 9.  int x2 = faces[i].x + faces[i].width;
-10.  int y2 = faces[i].y + faces[i].height;
-11. }
-```
-La primera linea carga el archivo de entrenamiento... etc
 
 ## 3. Resultados obtenidos
 
 ## 4. Conclusiones
+
+Debido al aprendizaje obtenido en las clases, se nos dificulta mucho la implementación de codigos, además de las correcta instalación de las bibliotecas en el repositorio.
+Logramos  detectar las personas con el centroide y con sus colores diferentes pero nos faltó la implementación de hacer una línea en la imagen o video para que los cálculos arrogados sean de mejor calidad para así llegar a la solución final y mucho mejor pensada que la solución mencionada en el inicio de este informe
 
 # Anexos
 
@@ -131,12 +112,14 @@ La primera linea carga el archivo de entrenamiento... etc
 ## Anexo B: Instalación de IDE y configuración librerías OpenCV
 
 ![visualcode](images/open.png) 
+![descarga](images/anexo1.png) 
+
 
 # Referecia
 
-Indicar los libros, páginas web, documentos, etc. Utilizados en el trabajo. Por ejemplo:
-
-1. MONTERO, J.,Metodos matemáticos aplicados a la ganadería.3aed. Sevilla: Ediciones de la pradera,2007.
-2. LVARADO,   J.   P.,¿Qué   debe   contener   un   artículo   científico?.http://www.ie.tec.ac.cr/palvarado/pmwiki/index.php/MSc/Art\%c3\%adculoCient\%c3\%adfico. Fe-cha de acceso:13/Nov/2018
+1.CMake. (s. f.). https://cmake.org/
+2.Librerías o Bibliotecas. (2020, 29 noviembre). programarya. Recuperado 24 de junio de 2022, de https://www.programarya.com/Cursos/C++/Bibliotecas-o-Librerias
+3.Build software better, together. (s. f.). GitHub. Recuperado 24 de junio de 2022, de https://github.com/topics/people-counter?l=python
+4.Hajeri, V. (2016, 27 julio). People counting System using OpenCV 3.1 [Vídeo]. YouTube. https://www.youtube.com/watch?v=SewTS0bj1gU&feature=youtu.be
 
 
