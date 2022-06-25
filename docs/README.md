@@ -61,18 +61,24 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 **Librerías:**
 
+![Opencv](images/opencv.png) 
+
 **-OpenCV:** (Open Source Computer Vision) es una librería multiplataforma originalmente desarrollada como proyecto por Intel para apoyar a los primeros compiladores Intel C++ y Microsoft Visual C++ en x86. Es muy utilizada actualmente para el procesamiento de imágenes y la visión artificial en general, también se ha utilizado en infinidad de aplicaciones como control de procesos, sistemas de seguridad con detección de movimiento, reconocimiento de objetos, robótica avanzada, etc.
 
 **Programas:**
+
+![Visual](images/visual.png) 
 
 **-Visual Studio Code :** Este programa es un editor de texto plano desarrollado por Microsoft como software OpenSource y es totalmente gratuito para todo tipo de usuarios para que cualquiera pueda programar en prácticamente cualquier lenguaje.
 
 **Extenciones:**
 
 ![C/C++](images/c++.png) 
+
 **- C/C++ :** Este paquete de extensión incluye un conjunto de extensiones populares para el desarrollo del lenguajes C/C++ en Visual Studio Code.
 
 ![C/C++run](images/c++run.png)
+
 **- C/C++ run :** Una extensión que se ejecuta en Visual Studio Code para compilar y ejecutar archivos individuales en lenguajes C/C++ fácilmente
 
 ![Cmake](images/cmake.png)
@@ -84,6 +90,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
 
 ### 2.2 Diseño 
+![Diagrama](images/diagrama.png) 
 
 Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
 
@@ -122,6 +129,8 @@ La primera linea carga el archivo de entrenamiento... etc
 ## Anexo A: Instalación librerías OpenCV
 
 ## Anexo B: Instalación de IDE y configuración librerías OpenCV
+
+![visualcode](images/open.png) 
 
 # Referecia
 
