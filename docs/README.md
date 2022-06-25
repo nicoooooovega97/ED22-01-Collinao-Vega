@@ -68,9 +68,9 @@ Este programa es un editor de texto plano desarrollado por Microsoft como softwa
 
 **Extenciones:**
 
-![C/C++](images/c++.png) **extensión para utilizar lenguaje blabloa
+                  ![C/C++](images/c++.png) 
 
-![C/C++run](images/c++run.png)
+                                   ![C/C++run](images/c++run.png)
 
 ![Cmake](images/cmake.png)
 
