@@ -62,7 +62,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 **Programas:**
 **Extenciones:**
 
-![C/C++](images/cc++.png)
+![C/C++](images/c c++.png)
 
 ![C/C++run](images/c++run.png)
 
