@@ -90,7 +90,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
 
 ### 2.2 Diseño 
-![diagrama](images/diagrama.png) 
+![diagrama](images/diagra.png) 
 
 Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
 
