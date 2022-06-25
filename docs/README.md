@@ -64,6 +64,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 **-OpenCV:** (Open Source Computer Vision) es una librería multiplataforma originalmente desarrollada como proyecto por Intel para apoyar a los primeros compiladores Intel C++ y Microsoft Visual C++ en x86. Es muy utilizada actualmente para el procesamiento de imágenes y la visión artificial en general, también se ha utilizado en infinidad de aplicaciones como control de procesos, sistemas de seguridad con detección de movimiento, reconocimiento de objetos, robótica avanzada, etc.
 
 **Programas:**
+Este programa es un editor de texto plano desarrollado por Microsoft como software OpenSource y es totalmente gratuito para todo tipo de usuarios para que cualquiera pueda programar en prácticamente cualquier lenguaje.
 
 **Extenciones:**
 
@@ -72,6 +73,8 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 ![C/C++run](images/c++run.png)
 
 ![Cmake](images/cmake.png)
+
+CMake es una familia de herramientas multiplataforma de código abierto diseñada para crear, probar y empaquetar software. CMake se usa para controlar el proceso de compilación de software mediante una plataforma simple y archivos de configuración independientes del compilador, y genera archivos MAKE nativos y espacios de trabajo que se pueden usar en el entorno de compilación de su elección
 
 
 
